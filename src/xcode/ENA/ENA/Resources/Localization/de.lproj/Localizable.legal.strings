@@ -1,6 +1,6 @@
 /* ExposureSubmissionWarnOthers */
 
-"ExposureSubmissionWarnOthers_acknowledgement_1_1" = "Die App teilt Ihr Testergebnis, um Nutzer von offiziellen Corona-Apps, denen Sie begegnet sind, zu warnen. Die Warnung funktioniert in den oben genannten Ländern. Wenn Sie zusätzlich Angaben zum Beginn Ihrer Symptome machen, werden auch diese geteilt.";
+"ExposureSubmissionWarnOthers_acknowledgement_1_1" = "Die App teilt Ihr Testergebnis, um Nutzer von offiziellebn Corona-Apps, denen Sie begegnet sind, zu warnen. Die Warnung funktioniert in den oben genannten Ländern. Wenn Sie zusätzlich Angaben zum Beginn Ihrer Symptome machen, werden auch diese geteilt.";
 
 "ExposureSubmissionWarnOthers_acknowledgement_1_2" = "Bitte geben Sie Ihr Testergebnis (genauer gesagt: Ihre Zufalls-IDs der letzten 14 Tage) im nächsten Schritt frei, indem Sie „Teilen“ antippen.";
 
@@ -70,7 +70,7 @@
 
 "DataDonation_Acknowledgement_BulletPoint_1" = "Ihr Einverständnis ist freiwillig. Sie können die App auch nutzen, wenn Sie Ihr Einverständnis nicht erteilen.";
 
-"DataDonation_Acknowledgement_BulletPoint_2" = "Wenn Sie Daten über Ihre App-Nutzung spenden, bleibt Ihre Identität weiterhin geschützt. Das RKI erfährt also nicht, wer Sie sind oder wen Sie getroffen haben. Es werden auch keine Profile gebildet.";
+"DataDonation_Acknowledgement_BulletPoint_2" = "Wenn Sie Daten über Ihre App-Nutzung spenden, bleibt Ihre Identität gegenüber dem RKI weiterhin geschützt. Das RKI erfährt also nicht, wer Sie sind oder wen Sie getroffen haben. Es werden auch keine Profile gebildet.";
 
 "DataDonation_Acknowledgement_BulletPoint_3" = "Sie können Ihr Einverständnis abgeben, wenn Sie mindestens 16 Jahre alt sind.";
 
