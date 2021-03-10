@@ -177,12 +177,9 @@ extension CachedAppConfiguration: AppConfigurationProviding {
 	func appConfiguration(forceFetch: Bool = false) -> AnyPublisher<SAP_Internal_V2_ApplicationConfigurationIOS, Never> {
 		let force = shouldFetch() || forceFetch
 
-		// TODO: [KGA] if let anstelle if var
-		if var cachedVersion = store.appConfigMetadata?.appConfig, !force {
+		if let cachedVersion = store.appConfigMetadata?.appConfig, !force {
 			Log.debug("fetching cached app configuration", log: .appConfig)
 			
-			// TODO: [KGA]
-			cachedVersion.supportedCountries = [ "DE", "FR", "CH", "IT", "AT", "NL", "BE", "DK", "SE", "GR", "BG", "EE", "FI", "IE", "HR", "LV", "LT", "LU", "MT", "PL", "PT", "RO", "SK", "SI", "ES", "CZ", "HU", "CY"]
 			// use the cached version
 			return Just(cachedVersion)
 				.receive(on: DispatchQueue.main.ocombine)
