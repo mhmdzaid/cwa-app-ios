@@ -159,14 +159,21 @@ class ENAUITests_02_AppInformation: XCTestCase {
 	}
 	
 	private func navigateToErrorReporting() {
-		app.swipeUp(velocity: .fast)
-		
+
+		guard let element = UITestHelper.scrollTo(identifier: "AppStrings.Home.appInformationCardTitle", element: app, app: app )
+		else {
+			XCTFail("Failed to scroll to element ID: AppStrings.Home.appInformationCardTitle")
+			return
+		}
+
 		// navigate to App Information
 		XCTAssertTrue(app.cells["AppStrings.Home.appInformationCardTitle"].waitForExistence(timeout: 5.0))
-		app.cells["AppStrings.Home.appInformationCardTitle"].tap()
-
+//		app.cells["AppStrings.Home.appInformationCardTitle"].tap()
+		element.tap()
+		
 		// navigate to Error Reporting
 		XCTAssertTrue(app.cells[AccessibilityIdentifiers.ErrorReport.navigation].waitForExistence(timeout: 5.0))
 		app.cells[AccessibilityIdentifiers.ErrorReport.navigation].tap()
 	}
+	
 }
